@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: employee-producer
+
+    
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value} 
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5001/eureka/
+
+
+
+
+
+      
+      
